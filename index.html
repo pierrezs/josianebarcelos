@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dra. Josiane Barcelos | Dentista em Nova Friburgo</title>
+    <meta
+      name="description"
+      content="Conheça o consultório da Dra. Josiane Barcelos em Nova Friburgo. Odontologia estética, facetas de resina, clareamento dental e atendimento humanizado."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("jb-theme");
+          if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a href="#inicio" class="skip-link">Pular para o conteúdo</a>
+
+    <header class="header" id="topo">
+      <div class="header__inner container">
+        <a href="#inicio" class="header__brand" aria-label="Dra. Josiane Barcelos — início">
+          <img src="Logo.png" alt="Logo Dra. Josiane Barcelos — odontologia estética" width="180" height="48" class="header__logo" />
+        </a>
+
+        <nav class="nav" aria-label="Principal">
+          <button type="button" class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="visually-hidden">Abrir menu</span>
+          </button>
+          <ul class="nav__list" id="navMenu">
+            <li><a href="#inicio" class="nav__link">Início</a></li>
+            <li><a href="#sobre" class="nav__link">Sobre</a></li>
+            <li><a href="#tratamentos" class="nav__link">Tratamentos</a></li>
+            <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+            <li><a href="#localizacao" class="nav__link">Localização</a></li>
+            <li><a href="#contato" class="nav__link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro ou escuro">
+            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+              </svg>
+            </span>
+            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </span>
+          </button>
+          <a href="#" class="btn btn--primary btn--header-wa" id="headerWhatsApp" data-wa-preset="header">Agendar avaliação</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <p class="hero__eyebrow">Odontologia estética em Nova Friburgo</p>
+            <h1 id="hero-title" class="hero__title">Transforme seu sorriso com naturalidade, cuidado e precisão</h1>
+            <p class="hero__lead">
+              A Dra. Josiane Barcelos oferece um atendimento odontológico humanizado, com foco em estética, saúde bucal e resultados naturais para valorizar o seu sorriso.
+            </p>
+            <div class="hero__cta">
+              <a href="#" class="btn btn--primary btn--hero-wa" id="heroWhatsApp" data-wa-preset="hero">Agendar pelo WhatsApp</a>
+              <a href="#tratamentos" class="btn btn--ghost">Conhecer tratamentos</a>
+            </div>
+          </div>
+          <div class="hero__visual reveal reveal--delay">
+            <div class="hero__visual-card">
+              <img src="Logo.png" alt="Identidade visual Dra. Josiane Barcelos" class="hero__logo-img" width="320" height="120" />
+              <p class="hero__visual-caption">Estética · Facetas · Sorriso natural</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sobre" id="sobre" aria-labelledby="sobre-title">
+        <div class="container">
+          <div class="sobre__grid">
+            <div class="sobre__figure reveal">
+              <div class="sobre__photo-frame">
+                <img
+                  src="Foto Dra. Josiane Barcelos.png"
+                  alt="Retrato da Dra. Josiane Barcelos, dentista em Nova Friburgo"
+                  width="480"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="sobre__text reveal reveal--delay">
+              <h2 id="sobre-title" class="section__title">Sobre a Dra. Josiane Barcelos</h2>
+              <p class="section__lead">
+                A Dra. Josiane Barcelos atua com dedicação, cuidado e atenção aos detalhes para oferecer uma odontologia que une saúde, estética e bem-estar. Seu atendimento é pensado para proporcionar uma experiência acolhedora, segura e personalizada, respeitando as necessidades e expectativas de cada paciente.
+              </p>
+              <ul class="sobre__highlights">
+                <li class="card-highlight">
+                  <h3 class="card-highlight__title">Atendimento humanizado</h3>
+                  <p class="card-highlight__text">Escuta ativa e tempo para você se sentir à vontade.</p>
+                </li>
+                <li class="card-highlight">
+                  <h3 class="card-highlight__title">Planejamento personalizado</h3>
+                  <p class="card-highlight__text">Cada sorriso é único — o plano também.</p>
+                </li>
+                <li class="card-highlight">
+                  <h3 class="card-highlight__title">Foco em estética natural</h3>
+                  <p class="card-highlight__text">Resultados bonitos e compatíveis com o seu rosto.</p>
+                </li>
+                <li class="card-highlight">
+                  <h3 class="card-highlight__title">Cuidado em cada detalhe</h3>
+                  <p class="card-highlight__text">Do primeiro contato ao pós-tratamento.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tratamentos" id="tratamentos" aria-labelledby="tratamentos-title">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 id="tratamentos-title" class="section__title">Tratamentos odontológicos</h2>
+            <p class="section__subtitle">Conheça algumas soluções para cuidar da saúde e da estética do seu sorriso.</p>
+          </header>
+          <ul class="tratamentos__grid">
+            <li class="treatment-card reveal">
+              <span class="treatment-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c2 3 4 6 4 10a4 4 0 1 1-8 0c0-4 2-7 4-10z"/><path d="M9 14h6"/></svg>
+              </span>
+              <h3 class="treatment-card__title">Facetas de resina</h3>
+              <p class="treatment-card__text">Uma opção estética para transformar o sorriso com naturalidade, corrigindo formato, cor e pequenas imperfeições dos dentes.</p>
+            </li>
+            <li class="treatment-card reveal">
+              <span class="treatment-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="7"/><path d="M12 8v4l3 2"/></svg>
+              </span>
+              <h3 class="treatment-card__title">Clareamento dental</h3>
+              <p class="treatment-card__text">Tratamento indicado para deixar o sorriso mais claro e harmônico, sempre com orientação profissional.</p>
+            </li>
+            <li class="treatment-card reveal">
+              <span class="treatment-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h8M10 8h4M9 16h6"/><ellipse cx="12" cy="12" rx="9" ry="6"/></svg>
+              </span>
+              <h3 class="treatment-card__title">Restaurações estéticas</h3>
+              <p class="treatment-card__text">Procedimentos para recuperar a forma, função e aparência dos dentes de maneira discreta e natural.</p>
+            </li>
+            <li class="treatment-card reveal">
+              <span class="treatment-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v4M8 21h8l-1-8H9l-1 8z"/><path d="M9 11c0-2 1.5-3 3-3s3 1 3 3"/></svg>
+              </span>
+              <h3 class="treatment-card__title">Limpeza e prevenção</h3>
+              <p class="treatment-card__text">Cuidados essenciais para manter a saúde bucal em dia e prevenir problemas futuros.</p>
+            </li>
+            <li class="treatment-card reveal">
+              <span class="treatment-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h5"/></svg>
+              </span>
+              <h3 class="treatment-card__title">Avaliação odontológica</h3>
+              <p class="treatment-card__text">Um momento importante para entender suas necessidades e indicar o melhor plano de tratamento.</p>
+            </li>
+            <li class="treatment-card reveal">
+              <span class="treatment-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></svg>
+              </span>
+              <h3 class="treatment-card__title">Harmonização do sorriso</h3>
+              <p class="treatment-card__text">Planejamento estético para deixar o sorriso mais equilibrado, bonito e compatível com o rosto.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section resultados" id="resultados" aria-labelledby="resultados-title">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 id="resultados-title" class="section__title">Casos e resultados</h2>
+            <p class="section__subtitle">Transformações reais com facetas e estética — sempre com naturalidade.</p>
+          </header>
+          <div class="resultados__grid">
+            <figure class="resultados__item reveal"><img src="Case de sucesso.jpg" alt="Antes e depois — caso de sucesso em facetas" loading="lazy" width="400" height="300" /></figure>
+            <figure class="resultados__item reveal"><img src="Case de sucesso 1.jpg" alt="Antes e depois — caso de sucesso em facetas" loading="lazy" width="400" height="300" /></figure>
+            <figure class="resultados__item reveal"><img src="Case de sucesso 2.jpg" alt="Antes e depois — caso de sucesso em facetas" loading="lazy" width="400" height="300" /></figure>
+            <figure class="resultados__item reveal"><img src="Case de sucesso 3.jpg" alt="Antes e depois — caso de sucesso em facetas" loading="lazy" width="400" height="300" /></figure>
+            <figure class="resultados__item reveal"><img src="Case de sucesso 4.jpg" alt="Antes e depois — caso de sucesso em facetas" loading="lazy" width="400" height="300" /></figure>
+            <figure class="resultados__item reveal"><img src="Case de sucesso 5.jpg" alt="Antes e depois — caso de sucesso em facetas" loading="lazy" width="400" height="300" /></figure>
+            <figure class="resultados__item reveal"><img src="Case de sucesso 6.jpg" alt="Antes e depois — caso de sucesso em facetas" loading="lazy" width="400" height="300" /></figure>
+            <figure class="resultados__item reveal"><img src="Case de sucesso 7.jpg" alt="Antes e depois — caso de sucesso em facetas" loading="lazy" width="400" height="300" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section diferenciais" id="diferenciais" aria-labelledby="diferenciais-title">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 id="diferenciais-title" class="section__title">Por que escolher a Dra. Josiane Barcelos?</h2>
+          </header>
+          <ul class="diferenciais__grid">
+            <li class="diff-card reveal"><h3 class="diff-card__title">Atendimento acolhedor e individualizado</h3></li>
+            <li class="diff-card reveal"><h3 class="diff-card__title">Planejamento cuidadoso de cada caso</h3></li>
+            <li class="diff-card reveal"><h3 class="diff-card__title">Foco em resultados naturais</h3></li>
+            <li class="diff-card reveal"><h3 class="diff-card__title">Ambiente confortável e profissional</h3></li>
+            <li class="diff-card reveal"><h3 class="diff-card__title">Comunicação clara em todas as etapas</h3></li>
+            <li class="diff-card reveal"><h3 class="diff-card__title">Localização de fácil acesso em Nova Friburgo</h3></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section depoimentos" id="depoimentos" aria-labelledby="depoimentos-title">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 id="depoimentos-title" class="section__title">O que dizem os pacientes</h2>
+            <p class="section__subtitle">Depoimentos reais sobre a experiência no consultório.</p>
+          </header>
+          <div class="depoimentos__grid">
+            <article class="depoimento-card reveal">
+              <h3 class="depoimento-card__name">Paloma Fernandes</h3>
+              <p class="depoimento-card__stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                <span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span>
+              </p>
+              <p class="depoimento-card__quote">Você é maravilhosa!! Obrigada por todo carinho!!😍❤️.</p>
+              <p class="depoimento-card__footer">Apaixonada pelo Resultado.</p>
+            </article>
+            <article class="depoimento-card reveal">
+              <h3 class="depoimento-card__name">Jamie Teixeira</h3>
+              <p class="depoimento-card__stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                <span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span>
+              </p>
+              <p class="depoimento-card__quote">Que experiência incrível! Você e sua equipa são pessoas incríveis. Obrigado por cuidar de nós e tornar meu sonho realidade 💫✨❤️</p>
+            </article>
+            <article class="depoimento-card reveal">
+              <h3 class="depoimento-card__name">Maiara Fernandes</h3>
+              <p class="depoimento-card__stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                <span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span>
+              </p>
+              <p class="depoimento-card__quote">Amei o resultado ! Você é SENSACIONAL! Obrigada! ❤️</p>
+            </article>
+            <article class="depoimento-card reveal">
+              <h3 class="depoimento-card__name">Monique Gomes</h3>
+              <p class="depoimento-card__stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                <span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span>
+              </p>
+              <p class="depoimento-card__quote">Encantada e eternamente grata pela qualidade do seu trabalho; pq mesmo que muitos tenham errado nos meus tratamentos, e mesmo por muitos nao tendo coragem de encarar meu caso coml um desafio, vc mais uma vez comprova a sua competência, responsabilidade e sensibilidade. Muito obrigada ❤️</p>
+            </article>
+            <article class="depoimento-card reveal">
+              <h3 class="depoimento-card__name">Gabrielle Cereja</h3>
+              <p class="depoimento-card__stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                <span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span><span class="depoimento-card__star" aria-hidden="true">★</span>
+              </p>
+              <p class="depoimento-card__quote">Você foi impecável em tudo! 😍 Até agora nao superei meu sorriso novo 🥹 Obrigada, obrigada e obrigadaaaa! Recomendo de olhos fechados ❤️</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-band" aria-labelledby="cta-title">
+        <div class="container cta-band__inner reveal">
+          <h2 id="cta-title" class="cta-band__title">Seu sorriso merece esse cuidado</h2>
+          <p class="cta-band__text">
+            Mais do que transformar a estética, cuidar do sorriso é investir em autoestima, segurança e qualidade de vida. Agende uma avaliação e descubra qual tratamento faz mais sentido para você.
+          </p>
+          <a href="#" class="btn btn--primary btn--lg" id="ctaWhatsApp" data-wa-preset="cta">Falar com a Dra. Josiane</a>
+        </div>
+      </section>
+
+      <section class="section localizacao" id="localizacao" aria-labelledby="localizacao-title">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 id="localizacao-title" class="section__title">Venha conhecer o consultório</h2>
+            <p class="section__lead section__lead--center">
+              A Dra. Josiane Barcelos atende em Nova Friburgo, em um espaço preparado para receber você com conforto, cuidado e profissionalismo.
+            </p>
+          </header>
+          <div class="localizacao__grid">
+            <div class="localizacao__info reveal">
+              <h3 class="localizacao__info-title">Contato e endereço</h3>
+              <address class="localizacao__address">
+                Edifício Dom Pasquale, nº 14, 5º andar, sala 502 — Centro<br />
+                Nova Friburgo — RJ
+              </address>
+              <p class="localizacao__phone">
+                <a href="tel:+5522998592587" class="localizacao__phone-link" aria-label="Ligar para o WhatsApp (22) 9 9859-2587">
+                  <svg class="localizacao__wa-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                  <span>(22) 9 9859-2587</span>
+                </a>
+              </p>
+              <a href="#" class="btn btn--primary" id="locWhatsApp" data-wa-preset="location">WhatsApp</a>
+            </div>
+            <div class="localizacao__map reveal reveal--delay">
+              <iframe
+                title="Mapa do consultório Dra. Josiane Barcelos em Nova Friburgo"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321.8700539179845!2d-42.53107430965064!3d-22.285152689798416!2m3!1f0!2f39.1793197655708!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x978b2e8b83d35d%3A0x452432bb5319b8fc!2sDra%20Josiane%20Barcelos%20facetas%20de%20resina%20Nova%20Friburgo!5e1!3m2!1spt-BR!2sbr!4v1777772025031!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contato" id="contato" aria-labelledby="contato-title">
+        <div class="container contato__narrow">
+          <header class="section__header reveal">
+            <h2 id="contato-title" class="section__title">Agende sua avaliação</h2>
+            <p class="section__subtitle">Preencha as informações abaixo e envie sua mensagem diretamente pelo WhatsApp.</p>
+          </header>
+          <form class="form-contato reveal" id="formContato" novalidate>
+            <p class="form-contato__error" id="formError" role="alert" hidden></p>
+            <div class="form-field">
+              <label for="nome">Nome <span class="req">*</span></label>
+              <input type="text" id="nome" name="nome" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="telefone">Telefone <span class="req">*</span></label>
+              <input type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="tel" required />
+            </div>
+            <div class="form-field">
+              <label for="tratamento">Tratamento de interesse <span class="req">*</span></label>
+              <select id="tratamento" name="tratamento" required>
+                <option value="">Selecione…</option>
+                <option>Facetas de resina</option>
+                <option>Clareamento dental</option>
+                <option>Restauração estética</option>
+                <option>Limpeza e prevenção</option>
+                <option>Avaliação odontológica</option>
+                <option>Outro tratamento</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre o que você busca…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <img src="Logo.png" alt="Logo Dra. Josiane Barcelos" class="footer__logo" width="160" height="42" loading="lazy" />
+          <p class="footer__tagline">Odontologia com cuidado, estética e naturalidade.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Rodapé">
+          <ul class="footer__links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#tratamentos">Tratamentos</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="footer__cta">
+          <a href="#" class="btn btn--primary" id="footerWhatsApp" data-wa-preset="footer">WhatsApp</a>
+          <p class="footer__copy">© 2026 Dra. Josiane Barcelos. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      type="button"
+      id="wa-float-trigger"
+      class="float-wa"
+      aria-haspopup="dialog"
+      aria-controls="waModal"
+      aria-expanded="false"
+      aria-label="Enviar mensagem pelo WhatsApp"
+      title="Fale no WhatsApp"
+    >
+      <svg class="wa-float__icon" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" focusable="false">
+        <path
+          fill="currentColor"
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </button>
+
+    <div class="wa-modal" id="waModal" role="dialog" aria-modal="true" aria-labelledby="waModalTitle" aria-hidden="true" hidden>
+      <div class="wa-modal__backdrop" id="waModalBackdrop" tabindex="-1" aria-hidden="true"></div>
+      <div class="wa-modal__panel">
+        <button type="button" class="wa-modal__close" id="waModalClose" aria-label="Fechar">&times;</button>
+        <h3 id="waModalTitle" class="wa-modal__title">Olá! Como podemos ajudar?</h3>
+        <p class="wa-modal__msg">Envie uma mensagem para a equipe da Dra. Josiane Barcelos.</p>
+        <label for="waModalInput" class="visually-hidden">Sua mensagem</label>
+        <textarea id="waModalInput" class="wa-modal__input" rows="3" placeholder="Digite sua mensagem…"></textarea>
+        <button type="button" class="btn btn--primary btn--block" id="waModalSend">Enviar pelo WhatsApp</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
