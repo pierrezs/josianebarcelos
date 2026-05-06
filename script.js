@@ -74,16 +74,33 @@
   var nav = document.querySelector(".nav");
   var navToggle = document.getElementById("navToggle");
   var navMenu = document.getElementById("navMenu");
+  var navBackdrop = document.getElementById("navBackdrop");
+
+  function navIsMobile() {
+    return typeof window.matchMedia !== "undefined" && window.matchMedia("(max-width: 768px)").matches;
+  }
+
+  function setNavOpen(open) {
+    if (!nav || !navToggle) return;
+    nav.classList.toggle("is-open", open);
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    navToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    document.body.classList.toggle("nav-open", !!(open && navIsMobile()));
+    navBackdrop?.setAttribute("aria-hidden", open ? "false" : "true");
+  }
 
   function closeNav() {
-    if (!nav || !navToggle) return;
-    nav.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
+    setNavOpen(false);
   }
 
   navToggle?.addEventListener("click", function () {
-    var open = nav.classList.toggle("is-open");
-    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    setNavOpen(!nav.classList.contains("is-open"));
+  });
+
+  navBackdrop?.addEventListener("click", closeNav);
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) closeNav();
   });
 
   navMenu?.querySelectorAll('a[href^="#"]').forEach(function (link) {
@@ -99,6 +116,7 @@
     var el = document.getElementById(id);
     if (!el || !PRESETS[presetKey]) return;
     el.addEventListener("click", function (e) {
+      closeNav();
       e.preventDefault();
       openWhatsApp(PRESETS[presetKey]);
     });

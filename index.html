@@ -34,38 +34,51 @@
         </a>
 
         <nav class="nav" aria-label="Principal">
-          <button type="button" class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <button
+            type="button"
+            class="nav__toggle"
+            id="navToggle"
+            aria-expanded="false"
+            aria-controls="navMenu"
+            aria-label="Abrir menu"
+          >
             <span class="nav__toggle-bar" aria-hidden="true"></span>
             <span class="nav__toggle-bar" aria-hidden="true"></span>
             <span class="nav__toggle-bar" aria-hidden="true"></span>
-            <span class="visually-hidden">Abrir menu</span>
           </button>
-          <ul class="nav__list" id="navMenu">
-            <li><a href="#inicio" class="nav__link">Início</a></li>
-            <li><a href="#sobre" class="nav__link">Sobre</a></li>
-            <li><a href="#tratamentos" class="nav__link">Tratamentos</a></li>
-            <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
-            <li><a href="#localizacao" class="nav__link">Localização</a></li>
-            <li><a href="#contato" class="nav__link">Contato</a></li>
-          </ul>
+          <div class="nav__backdrop" id="navBackdrop" aria-hidden="true"></div>
+          <div class="nav__drawer" id="navMenu">
+            <div class="nav__list-wrap">
+              <ul class="nav__list">
+                <li><a href="#inicio" class="nav__link">Início</a></li>
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                <li><a href="#tratamentos" class="nav__link">Tratamentos</a></li>
+                <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+                <li><a href="#localizacao" class="nav__link">Localização</a></li>
+                <li><a href="#contato" class="nav__link">Contato</a></li>
+              </ul>
+            </div>
+            <div class="header__actions">
+              <div class="header__actions__theme">
+                <span class="header__actions__label">Aparência</span>
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro ou escuro">
+                  <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                    </svg>
+                  </span>
+                  <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <a href="#" class="btn btn--primary btn--header-wa btn--nav-cta" id="headerWhatsApp" data-wa-preset="header">Agendar avaliação</a>
+            </div>
+          </div>
         </nav>
-
-        <div class="header__actions">
-          <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro ou escuro">
-            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="4" />
-                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-              </svg>
-            </span>
-            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-              </svg>
-            </span>
-          </button>
-          <a href="#" class="btn btn--primary btn--header-wa" id="headerWhatsApp" data-wa-preset="header">Agendar avaliação</a>
-        </div>
       </div>
     </header>
 
